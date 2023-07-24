@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <!-- Custom CSS -->
+     <link rel="stylesheet" href="style.css">
+    <title>Media</title>
+</head>
+<body>
+    <div class="slider">
+        <ul class="slides">
+           <li>
+             <img src="images/img.jpg" alt="">
+             <div class="caption center-align">
+                 <h3 class="white-text">This is our <span class="yellow-text">big Tagline!</span></h3>
+                 <h5 class="white-text">Here's our small slogan.</h5>
+             </div>
+           </li>
+           <li>
+             <img src="images/img1.jpg" alt="">
+             <div class="caption left-align">
+                 <h3 class="white-text">This is our big Tagline!</h3>
+                 <h5 class="white-text">Here's our small slogan.</h5>
+             </div>
+           </li>
+           <li>
+             <img src="images/img2.jpg" alt="">
+             <div class="caption right-align">
+                 <h3 class="white-text">This is our big Tagline!</h3>
+                 <h5 class="white-text">Here's our small slogan.</h5>
+             </div>
+           </li>
+        </ul>
+     </div>
+
+    <h1 class="center">Media</h1>
+    <div class="divider"></div>
+    <br>
+    <div class="container">
+        <p>Media components include things that have to do with large media objects like Images, Video, Audio, etc.</p>
+
+        <br><br>
+        <!-- Material Box -->
+        <h3>Material Box</h3>
+        <p>Material box is a material design implementation of the Lightbox plugin. When a user clicks on an image that can be enlarged, Material box centers the image and enlarges it in a smooth, non-jarring manner. To dismiss the image, the user can either click on the image again, scroll away, or press the ESC key.</p>
+
+        <img src="images/img2.jpg" alt="" class="responsive-img materialboxed" data-caption="It is very easy to add a short caption to your photo. Just add the caption as a data-caption attribute.">
+        <p>Creating the above image with the effect is as simple as adding a materialboxed class to the image tag.</p>
+
+
+        <br><br><br><br><br>
+        <!-- Slider -->
+        <h3>Slider</h3>
+        <p>Our slider is a simple and elegant image carousel. You can also have captions that will be transitioned on their own depending on their alignment. You can also have indicators that show up on the bottom of the slider.</p>
+
+        
+    </div>
+
+
+    <div style="height: 1000px;"></div>
+    
+
+
+
+
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // materialboxed Init
+            $('.materialboxed').materialbox({
+                inDuration: 1000,
+                outDuration: 1000
+            });
+            // slider init
+            $('.slider').slider({
+                indicators: false,
+                height: 150
+                
+            });
+        });
+    </script>
+</body>
+</html>

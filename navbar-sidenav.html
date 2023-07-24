@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- Font-awesome cdnjs -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <link rel="stylesheet" href="style.css">
+    <title>Navbar & Sidenav</title>
+</head>
+<body>
+    <div class="navbar-fixed">
+      <nav class="light-blue">
+        <div class="container">
+          <div class="nav-wrapper">
+              <a href="" class="brand-logo">
+                  <i class="fa-brands fa-twitter"></i>
+              </a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li>
+                  <a href="">Home</a>
+                </li> 
+                <li>
+                  <a href="">About</a>
+                </li> 
+                <li>
+                  <a href="">Contact Us</a>
+                </li> 
+                <li>
+                  <a href="" class="dropdown-trigger" data-target="dropdown1">
+                    <i class="material-icons">
+                      arrow_drop_down
+                    </i>
+                  </a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li>
+        <a href="">Github</a>
+      </li>
+      <li>
+        <a href="">Docker</a>
+      </li>
+      <li>
+        <a href="">Tiktok</a>
+      </li>
+    </ul>
+    <h1 class="center">Navbar</h1>
+    <div class="divider"></div>
+    <br><br>
+    <div class="container">
+        <p>The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.
+        </p>
+
+        <br>
+        <!-- Right Aligned Links -->
+        <h3>Right Aligned Links</h3>
+        <p>To right align your navbar links, just add a right class to your <'ul'> that contains them.</p>
+        <nav class="light-blue">
+          <div class="container">
+            <div class="nav-wrapper">
+                <a href="" class="brand-logo">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li>
+                    <a href="">Home</a>
+                  </li> 
+                  <li>
+                    <a href="">About</a>
+                  </li> 
+                  <li>
+                    <a href="">Contact Us</a>
+                  </li> 
+                </ul>
+            </div>
+          </div>
+        </nav>
+         <br><br>
+        <!-- Left Aligned Links -->
+        <h3>Left Aligned Links</h3>
+        <p>To left align your navbar links, just add a left class to your <'ul'> that contains them.</p>
+        <nav class="deep-orange">
+            <div class="container">
+              <div class="nav-wrapper">
+                  <a href="" class="brand-logo right">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li>
+                      <a href="">Home</a>
+                    </li> 
+                    <li>
+                      <a href="">About</a>
+                    </li> 
+                    <li>
+                      <a href="">Contact Us</a>
+                    </li> 
+                  </ul>
+              </div>
+            </div>
+          </nav>
+
+          <br><br>
+          <!-- Centering the logo -->
+          <h3>Centering the logo</h3>
+          <p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the center class to your <'a class="brand-logo"'>. You will have to make sure yourself that links do not overlap if you use this.
+          </p>
+          <nav class="black">
+            <div class="container">
+              <div class="nav-wrapper">
+                  <a href="" class="brand-logo center">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                      <a href="">Home</a>
+                    </li> 
+                    <li>
+                      <a href="">About</a>
+                    </li> 
+                    <li>
+                      <a href="">Contact Us</a>
+                    </li> 
+                  </ul>
+              </div>
+            </div>
+          </nav>
+          <br><br>
+          <!-- Active Items -->
+          <h3>Active Items</h3>
+          <p>Add active class to your li tags to denote the current page.</p>
+          <nav class="blue">
+            <div class="container">
+              <div class="nav-wrapper">
+                  <a href="" class="brand-logo">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                      <a href="">Home</a>
+                    </li> 
+                    <li class="active">
+                      <a href="">About</a>
+                    </li> 
+                    <li>
+                      <a href="">Contact Us</a>
+                    </li> 
+                  </ul>
+              </div>
+            </div>
+          </nav>
+
+        <br><br>
+        <!-- Extended Navbar with Tabs -->
+        <h3>Extended Navbar with Tabs</h3>
+        <p>To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.
+        </p>
+        <nav class="deep-purple darken-4 nav-extended">
+            <div class="container">
+              <div class="nav-wrapper">
+                  <a href="" class="brand-logo">
+                    <i class="fa-brands fa-discord"></i>
+                  </a>
+                  <a href="" class="sidenav-trigger" data-target="mobile-demo">
+                    <i class="fa-solid fa-bars"></i>
+                  </a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li class="active">
+                      <a href="">Home</a>
+                    </li> 
+                    <li>
+                      <a href="">About</a>
+                    </li> 
+                    <li>
+                      <a href="">Contact Us</a>
+                    </li> 
+                  </ul>
+              </div>
+            </div>
+            <div class="nav-content">
+                <ul class="tabs tabs-transparent">
+                    <li class="tab">
+                        <a href="#github">GitHub</a>
+                    </li>
+                    <li class="tab">
+                        <a href="#docker">Docker</a>
+                    </li>
+                    <li class="tab">
+                        <a href="#tiktok">Tiktok</a>
+                    </li>
+                </ul>
+            </div>
+          </nav>
+
+          <!-- sidenav Structure -->
+           <ul class="sidenav" id="mobile-demo">
+             <li>
+               <a href="">Home</a>
+             </li>
+             <li>
+               <a href="">About</a>
+             </li>
+             <li>
+               <a href="">Contact Us</a>
+             </li>
+           </ul>
+          <!-- Tabs Structure -->
+          <div class="row center">
+            <div class="col s12" id="github">
+                <div class="card-panel">
+                  <i class="fa-brands fa-github large deep-purple-text text-darken-4"></i>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit numquam provident, molestias doloribus voluptas animi, alias, sed inventore nam deserunt temporibus? Esse recusandae minus ipsum expedita magni fugit debitis sapiente?</p>
+                </div>
+            </div>
+            <div class="col s12" id="docker">
+                <div class="card-panel">
+                  <i class="fa-brands fa-docker large deep-purple-text text-darken-4 text-darken-2"></i>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim molestiae perferendis suscipit quam ex libero quae tempora facere officiis iure quod laboriosam harum pariatur vel alias, placeat nihil nesciunt? Modi?</p>
+                </div>
+            </div>
+            <div class="col s12" id="tiktok">
+                <div class="card-panel">
+                  <i class="fa-brands fa-tiktok large deep-purple-text text-darken-4 text-darken-4"></i>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum cupiditate perspiciatis in nostrum accusamus consectetur sequi quisquam nesciunt pariatur at! Tenetur enim voluptas expedita consequatur quo accusamus ratione. Reprehenderit, perspiciatis.</p>
+                </div>
+            </div>
+          </div>
+    </div>
+
+
+    <div style="height: 1000px;"></div>
+    
+
+
+    
+
+
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // tabs init
+            $('.tabs').tabs();
+            // sidenav init
+            $('.sidenav').sidenav({
+              edge: 'right',
+              inDuration: 1000,
+              outDuration: 1000
+            });
+            // dropdown init
+            $('.dropdown-trigger').dropdown();
+        });
+    </script>
+</body>
+</html>
